@@ -29,3 +29,13 @@ const createCounter = () => {
 };
 
 createCounter();
+
+// Ejemplo de desestructuración de objetos
+const person = {
+    name: 'Juan',
+    age: 30,
+    city: 'Zapopan'
+};
+
+const { name, age, city } = person;
+console.log(`Nombre: ${name}, Edad: ${age}, Ciudad: ${city}`);
