@@ -18,8 +18,10 @@ const createCounter = () => {
 
     decrementButton.textContent = 'Decrementar';
     decrementButton.addEventListener('click', () => {
-        count--;
-        updateCounter();
+        if (count > 0) {
+            count--;
+            updateCounter();
+        }
     });
 
     updateCounter();
